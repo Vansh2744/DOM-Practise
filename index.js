@@ -18,3 +18,7 @@ document.getElementById("addText").addEventListener("click", () => {
   paraElement.textContent = "Hello Vansh";
   document.getElementById("drag").appendChild(paraElement);
 });
+
+document.getElementById("rmLast").addEventListener("click", () => {
+  document.getElementById("drag").lastElementChild.remove();
+});
