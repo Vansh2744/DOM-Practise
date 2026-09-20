@@ -12,3 +12,9 @@ document.getElementById("changeText").addEventListener("click", () => {
 document.getElementById("highlight").addEventListener("click", function () {
   this.classList.add("hlt");
 });
+
+document.getElementById("addText").addEventListener("click", () => {
+  let paraElement = document.createElement("p");
+  paraElement.textContent = "Hello Vansh";
+  document.getElementById("drag").appendChild(paraElement);
+});
