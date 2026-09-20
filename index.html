@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #drag {
+        border: 1px solid black;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
   </head>
-  <script src="./index.js"></script>
   <body>
     <div>
       <p id="welcome">Hello Everyone</p>
-      <button id="btn">Display Text</button>
+      <button id="colorChangeBtn">Display Text</button>
+      <div id="drag" draggable="true">
+        <p>Drag and Drop</p>
+      </div>
     </div>
   </body>
+  <script src="./index.js" defer></script>
 </html>
