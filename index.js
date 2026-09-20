@@ -8,3 +8,7 @@ button.addEventListener("click", () => {
 document.getElementById("changeText").addEventListener("click", () => {
   document.getElementById("drag").children[0].textContent = "My First Child";
 });
+
+document.getElementById("highlight").addEventListener("click", function () {
+  this.classList.add("hlt");
+});
