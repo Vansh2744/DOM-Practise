@@ -22,3 +22,7 @@ document.getElementById("addText").addEventListener("click", () => {
 document.getElementById("rmLast").addEventListener("click", () => {
   document.getElementById("drag").lastElementChild.remove();
 });
+
+document.getElementsByClassName("todo")[0].addEventListener("click", (e) => {
+  console.log(`Target Item : ${e.target.textContent}`);
+});
