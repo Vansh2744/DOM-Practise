@@ -61,3 +61,19 @@ document.getElementById("clickBtn").addEventListener("click", (e) => {
 document.getElementById("clickBtn").addEventListener("click", (e) => {
   console.log("Click3");
 });
+
+// let isHighlighted = false;
+
+// document.getElementById("toggle").addEventListener("click", function () {
+//   if (!isHighlighted) {
+//     this.style.backgroundColor = "yellow";
+//     isHighlighted = true;
+//   } else {
+//     this.style.backgroundColor = "";
+//     isHighlighted = false;
+//   }
+// });
+
+document.getElementById("toggle").addEventListener("click", function () {
+  this.classList.toggle("hlt");
+});
