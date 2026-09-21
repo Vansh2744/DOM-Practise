@@ -33,12 +33,14 @@ document.getElementsByClassName("outer")[0].addEventListener("click", () => {
 
 document
   .getElementsByClassName("inner-outer")[0]
-  .addEventListener("click", () => {
+  .addEventListener("click", (e) => {
     console.log("Inner-Outer Box");
+    e.stopPropagation();
   });
 
-document.getElementsByClassName("inner")[0].addEventListener("click", () => {
+document.getElementsByClassName("inner")[0].addEventListener("click", (e) => {
   console.log("Inner Box");
+  e.stopPropagation();
 });
 
 document.getElementById("submitForm").addEventListener("submit", function (e) {
