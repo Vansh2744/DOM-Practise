@@ -11,6 +11,27 @@
       .todo {
         cursor: pointer;
       }
+      .outer {
+        background-color: blue;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .inner-outer {
+        background-color: aquamarine;
+        height: 130px;
+        width: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .inner {
+        background-color: brown;
+        height: 50px;
+        width: 50px;
+      }
     </style>
   </head>
   <body>
@@ -41,6 +62,32 @@
           <li>Interview Prep</li>
           <li>Dinner</li>
         </ul>
+      </div>
+
+      <div class="outer">
+        <div class="inner-outer">
+          <div class="inner"></div>
+        </div>
+      </div>
+
+      <div>
+        <form id="submitForm">
+          <h3>Form</h3>
+          <div>
+            <label for="nameField">Name:</label>
+            <input type="text" name="name" id="nameField" placeholder="Name" />
+          </div>
+          <div>
+            <label for="emailField">Email:</label>
+            <input
+              type="text"
+              name="email"
+              id="emailField"
+              placeholder="Email"
+            />
+          </div>
+          <button id="submitBtn" type="submit">Submit</button>
+        </form>
       </div>
     </div>
   </body>
