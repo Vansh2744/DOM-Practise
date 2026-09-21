@@ -48,3 +48,16 @@ document.getElementById("submitForm").addEventListener("submit", function (e) {
   console.log(document.getElementById("nameField").value);
   console.log(document.getElementById("emailField").value);
 });
+
+document.getElementById("clickBtn").addEventListener("click", (e) => {
+  console.log("Click1");
+  e.stopImmediatePropagation();
+});
+
+document.getElementById("clickBtn").addEventListener("click", (e) => {
+  console.log("Click2");
+});
+
+document.getElementById("clickBtn").addEventListener("click", (e) => {
+  console.log("Click3");
+});
